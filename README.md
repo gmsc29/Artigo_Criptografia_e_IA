@@ -1,7 +1,7 @@
 # Como a Criptografia Protege Nossos Dados na Era da Inteligência Artificial
 
 Site estático moderno e responsivo para divulgar o artigo.  
-Inclui modo claro/escuro, sumário automático, barra de progresso de leitura, botão de impressão/gerar PDF pelo navegador e links para download do artigo em **PDF** e **DOCX**.
+Inclui modo claro/escuro, sumário automático, barra de progresso de leitura, botão de impressão/gerar PDF pelo navegador e links para download do artigo em **PDF**
 
 ## ✨ Recursos
 
@@ -11,4 +11,4 @@ Inclui modo claro/escuro, sumário automático, barra de progresso de leitura, b
 - **Barra de progresso** de leitura no topo  
 - **Imprimir / Salvar em PDF** (via `window.print()`)  
 - **Copiar citação ABNT** em 1 clique  
-- **Downloads** do artigo: `PDF` e `DOCX`
+- **Download** do artigo: `PDF` 
