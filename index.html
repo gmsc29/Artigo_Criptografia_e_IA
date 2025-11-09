@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Como a Criptografia Protege Nossos Dados na Era da IA — Gabriel Soares</title>
+  <meta name="description" content="Artigo didático sobre como a criptografia protege dados em um mundo com Inteligência Artificial — com fundamentos, aplicações, ética e referências." />
+  <meta property="og:title" content="Como a Criptografia Protege Nossos Dados na Era da IA" />
+  <meta property="og:description" content="Fundamentos, relação com IA, impactos éticos e sociais, e referências." />
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="topo">
+  <!-- Header -->
+  <header class="site">
+    <div class="container nav">
+      <div class="brand" aria-label="Marca do site">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Criptografia & IA</span>
+      </div>
+      <div class="actions">
+        <button class="btn" id="themeToggle" title="Alternar tema (claro/escuro)" aria-label="Alternar tema">🌗</button>
+        <button class="btn" id="printBtn" title="Imprimir ou salvar em PDF">🖨️ Imprimir</button>
+        <a class="btn primary" href="#referencias" title="Ir para referências">📚 Referências</a>
+      </div>
+    </div>
+    <div class="progress" id="progress"></div>
+  </header>
+
+  <!-- Hero / Header Card -->
+  <main class="hero">
+    <div class="container card">
+      <div class="hero-inner">
+        <div>
+          <h1 class="title">Como a Criptografia Protege Nossos Dados na Era da Inteligência Artificial</h1>
+          <p class="subtitle">Por <strong>Gabriel Matheus Soares de Carvalho</strong> — Universidade Presbiteriana Mackenzie</p>
+          <div class="meta">
+            <span class="chip" title="tipo">Artigo • Divulgação Científica</span>
+            <span class="chip" title="idioma">pt‑BR</span>
+            <span class="chip" title="licença">Uso acadêmico</span>
+          </div>
+          <div class="keywords" aria-label="Palavras‑chave">
+            <span class="keyword">Criptografia</span>
+            <span class="keyword">Inteligência Artificial</span>
+            <span class="keyword">Privacidade</span>
+            <span class="keyword">Segurança de Dados</span>
+            <span class="keyword">Ética Digital</span>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn" href="Artigo_Criptografia_e_IA_Gabriel_Soares.pdf" download>⬇️ Baixar PDF</a>
+            <a class="btn" href="Artigo_Criptografia_e_IA_Gabriel_Soares.docx" download>⬇️ Baixar DOCX</a>
+            <button class="btn" id="copyCitation">📎 Copiar citação</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Layout with TOC + Content -->
+  <section class="container layout">
+    <aside class="toc" aria-label="Sumário">
+      <h3>Sumário</h3>
+      <nav id="tocList"></nav>
+    </aside>
+
+    <article id="conteudo" class="card">
+      <div style="padding: 26px">
+        <section id="resumo">
+          <h2>Resumo <a class="anchor-link" href="#resumo" aria-label="Link para Resumo">#</a></h2>
+          <div class="abstract">
+            <p>Este artigo discute a relevância da criptografia como ferramenta essencial para a proteção de dados em um cenário dominado pela Inteligência Artificial (IA). A expansão do uso da IA em áreas como educação, saúde, segurança pública e finanças ampliou a coleta e o processamento de informações sensíveis, tornando indispensável o uso de mecanismos que garantam privacidade, integridade e confidencialidade. O texto apresenta os fundamentos da criptografia, sua relação com os sistemas de IA, exemplos de aplicação prática e reflexões éticas e sociais sobre o uso responsável das tecnologias digitais.</p>
+          </div>
+        </section>
+
+        <section id="palavras-chave">
+          <h2>Palavras‑chave <a class="anchor-link" href="#palavras-chave" aria-label="Link para Palavras‑chave">#</a></h2>
+          <p>
+            <span class="keyword">Criptografia</span>
+            <span class="keyword">Inteligência Artificial</span>
+            <span class="keyword">Privacidade</span>
+            <span class="keyword">Segurança de Dados</span>
+            <span class="keyword">Ética Digital</span>
+          </p>
+        </section>
+
+        <section id="introducao">
+          <h2>1. Introdução <a class="anchor-link" href="#introducao" aria-label="Link para Introdução">#</a></h2>
+          <p>O avanço acelerado das tecnologias digitais transformou a maneira como a sociedade vive, trabalha e se comunica. Ferramentas de Inteligência Artificial estão cada vez mais presentes em atividades cotidianas, desde recomendações de conteúdo em redes sociais até diagnósticos médicos auxiliados por algoritmos. Esse cenário, no entanto, traz um grande desafio: como assegurar que os dados utilizados por essas tecnologias estejam protegidos contra acessos indevidos e manipulações?</p>
+          <p>A resposta para essa questão está na criptografia, uma ciência que permite codificar informações, garantindo que apenas pessoas autorizadas consigam acessá‑las. Em tempos em que dados pessoais se tornaram um dos recursos mais valiosos do mundo, a criptografia atua como a principal barreira contra vazamentos, fraudes e invasões de privacidade.</p>
+          <p>A relação entre criptografia e IA vai além da segurança técnica. Trata‑se de um tema que envolve ética, responsabilidade social e conscientização digital. Compreender como essas tecnologias se complementam é essencial para promover um uso seguro e justo da Inteligência Artificial na sociedade contemporânea.</p>
+        </section>
+
+        <section id="fundamentos">
+          <h2>2. Fundamentos da Criptografia <a class="anchor-link" href="#fundamentos" aria-label="Link para Fundamentos da Criptografia">#</a></h2>
+          <p>A criptografia, cujo nome deriva das palavras gregas <em>kryptós</em> (escondido) e <em>gráphein</em> (escrita), é o processo de transformar mensagens legíveis em códigos indecifráveis para qualquer pessoa que não possua a chave de acesso.</p>
+          <p>Existem dois modelos principais: <strong>criptografia simétrica</strong> e <strong>criptografia assimétrica</strong>. A criptografia simétrica utiliza uma única chave tanto para cifrar quanto para decifrar os dados, sendo rápida e eficiente, porém dependente da segurança na troca dessa chave. Já a criptografia assimétrica utiliza um par de chaves, uma pública e uma privada, garantindo maior segurança em comunicações digitais como sites com protocolo HTTPS e aplicativos de mensagens.</p>
+          <p>Com o crescimento da computação em nuvem e das transações digitais, a criptografia tornou‑se um dos pilares da segurança da informação. Sem ela, qualquer dado transmitido em rede estaria vulnerável à interceptação e ao uso indevido. Além dos métodos clássicos, surgem novas abordagens como a <strong>criptografia quântica</strong> e a <strong>criptografia homomórfica</strong>, que permitem o processamento seguro de dados mesmo quando estão criptografados, possibilitando aplicações avançadas em IA.</p>
+        </section>
+
+        <section id="relacao-ia">
+          <h2>3. A Relação entre Criptografia e Inteligência Artificial <a class="anchor-link" href="#relacao-ia" aria-label="Link para Relação entre Criptografia e IA">#</a></h2>
+          <p>A Inteligência Artificial depende da coleta e análise de grandes volumes de dados, muitos deles pessoais e sensíveis. Sem mecanismos de proteção, essas informações podem ser utilizadas de forma indevida, colocando em risco a privacidade dos usuários. A criptografia garante que os dados processados por sistemas inteligentes permaneçam seguros durante todas as etapas de tratamento.</p>
+          <p>Em sistemas de saúde, a criptografia protege registros médicos, permitindo que algoritmos analisem informações sem identificar pacientes. Em bancos digitais, ela assegura a integridade das transações e impede fraudes eletrônicas. Em segurança pública, protege bancos de dados biométricos e sistemas de reconhecimento facial. Além disso, legislações como a Lei Geral de Proteção de Dados (LGPD) e o Regulamento Geral de Proteção de Dados (GDPR) reforçam a necessidade de criptografia como ferramenta de conformidade ética e legal.</p>
+        </section>
+
+        <section id="impactos-eticos">
+          <h2>4. Impactos Sociais e Éticos <a class="anchor-link" href="#impactos-eticos" aria-label="Link para Impactos Sociais e Éticos">#</a></h2>
+          <p>A criptografia tem um papel social fundamental na proteção dos direitos digitais. Ela contribui para garantir que as pessoas mantenham controle sobre suas informações pessoais e reforça a confiança pública nas tecnologias baseadas em IA. Entretanto, o acesso ao conhecimento sobre segurança digital ainda é desigual. Projetos educativos que simplifiquem conceitos de criptografia e segurança da informação podem ajudar a reduzir essa lacuna e promover uma cultura de cidadania digital.</p>
+          <p>A adoção ética da IA requer transparência no uso de dados e responsabilidade por parte das instituições. A criptografia, nesse contexto, é uma aliada indispensável para equilibrar inovação e privacidade, promovendo um ambiente digital seguro, inclusivo e sustentável.</p>
+        </section>
+
+        <section id="conclusao">
+          <h2>5. Considerações Finais <a class="anchor-link" href="#conclusao" aria-label="Link para Considerações Finais">#</a></h2>
+          <p>A criptografia se consolidou como um pilar essencial para o avanço seguro da Inteligência Artificial. Ela protege dados, fortalece a confiança digital e garante que os sistemas tecnológicos respeitem os direitos humanos. Com o aumento exponencial do volume de dados, investir em segurança e educação digital é um passo indispensável para o futuro.</p>
+          <p>Compreender e aplicar os princípios da criptografia representa um compromisso ético com a inovação responsável. Ao unir criptografia e IA, é possível desenvolver tecnologias mais seguras, confiáveis e centradas nas pessoas, promovendo uma sociedade digital baseada em privacidade, respeito e responsabilidade social.</p>
+        </section>
+
+        <section id="referencias">
+          <h2>Referências <a class="anchor-link" href="#referencias" aria-label="Link para Referências">#</a></h2>
+          <ul>
+            <li>IBM. O que é criptografia? Disponível em: <a href="https://www.ibm.com/br-pt/topics/encryption" target="_blank" rel="noopener">ibm.com/br-pt/topics/encryption</a>.</li>
+            <li>Kaspersky. Criptografia: conceitos básicos. Disponível em: <a href="https://www.kaspersky.com.br/resource-center/definitions/what-is-encryption" target="_blank" rel="noopener">kaspersky.com.br/resource-center/definitions/what-is-encryption</a>.</li>
+            <li>Microsoft. Segurança de dados e IA responsável.</li>
+            <li>Wikipédia. Criptografia e Inteligência Artificial.</li>
+            <li>LGPD. Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais).</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </section>
+
+  <footer class="container">
+    <div class="footer-grid">
+      <span>© <span id="year"></span> Gabriel Matheus Soares de Carvalho • Universidade Presbiteriana Mackenzie</span>
+      <a class="btn" href="#topo">⬆️ Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
